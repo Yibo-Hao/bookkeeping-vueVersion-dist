@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><meta name=browsermode content=application><meta name=full-screen content=yes><meta name=x5-fullscreen content=true><meta name=x5-page-mode content=app><meta name=360-fullscreen content=true><style>#loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+      }
+      #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #fff;
+        animation: spin 2s linear infinite;
+        z-index: 1001;
+      }
+      #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #fff;
+        animation: spin 3s linear infinite;
+      }
+      #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #fff;
+        animation: spin 1.5s linear infinite;
+      }
+      /*//三个圆圈*/
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #ffda47;
+        z-index: 1000;
+        transform: translateX(0);
+      }
+      #loader-wrapper .loader-section.section-left {
+        left: 0;
+      }
+      #loader-wrapper .loader-section.section-right {
+        right: 0;
+      }</style><title>vue-book</title><link href=/bookkeeping-vueVersion-dist/css/app.85fd0044.css rel=preload as=style><link href=/bookkeeping-vueVersion-dist/js/app.a30261a1.js rel=preload as=script><link href=/bookkeeping-vueVersion-dist/js/chunk-vendors.b63330d2.js rel=preload as=script><link href=/bookkeeping-vueVersion-dist/css/app.85fd0044.css rel=stylesheet><link rel=icon type=image/png sizes=32x32 href=/bookkeeping-vueVersion-dist/img/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/bookkeeping-vueVersion-dist/img/icons/favicon-16x16.png><link rel=manifest href=/bookkeeping-vueVersion-dist/manifest.json><meta name=theme-color content=#4DBA87><meta name=apple-mobile-web-app-capable content=no><meta name=apple-mobile-web-app-status-bar-style content=default><meta name=apple-mobile-web-app-title content=vue-book><link rel=apple-touch-icon href=/bookkeeping-vueVersion-dist/img/icons/apple-touch-icon-152x152.png><link rel=mask-icon href=/bookkeeping-vueVersion-dist/img/icons/safari-pinned-tab.svg color=#4DBA87><meta name=msapplication-TileImage content=/bookkeeping-vueVersion-dist/img/icons/msapplication-icon-144x144.png><meta name=msapplication-TileColor content=#000000></head><body><div id=before><div id=loader-wrapper><div id=loader></div><div class="loader-section section-left"></div><div class="loader-section section-right"></div><br></div></div><div id=app></div><script src=/bookkeeping-vueVersion-dist/js/chunk-vendors.b63330d2.js></script><script src=/bookkeeping-vueVersion-dist/js/app.a30261a1.js></script></body></html>
